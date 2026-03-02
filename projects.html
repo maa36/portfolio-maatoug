@@ -1,146 +1,189 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Projets de développement web de Maatoug Guenaoui : React, TypeScript, API REST et design system. Portfolio complet." />
-    <meta name="author" content="" />
-    <title>Projets | Maatoug Guenaoui</title>
-    <!-- Favicon-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Projets de développement web de Maatoug Guenaoui : Connector Mapper et refonte PeopleSpheres en React, TypeScript et API REST. Portfolio complet d'un développeur Full-Stack." />
+    <meta name="author" content="Maatoug Guenaoui" />
+    <title>Projets | Maatoug Guenaoui – Développeur Full-Stack</title>
+
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Custom Google font-->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
         rel="stylesheet" />
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Styles -->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body class="d-flex flex-column h-100 bg-light">
-    <main class="flex-shrink-0">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-            <div class="container px-5">
-                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Maatoug
-                        Guenaoui</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"><span
-                        class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="resume.html">Parcours</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
+<body>
+
+    <!-- ── Navbar ──────────────────────────────────────────── -->
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+        <div class="container">
+            <div class="navbar-inner">
+                <a class="navbar-brand" href="index.html" aria-label="Accueil – Maatoug Guenaoui">Maatoug Guenaoui</a>
+
+                <ul class="nav-links" id="nav-links" role="list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="resume.html">Parcours</a></li>
+                    <li><a href="projects.html">Projets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="nav-right">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Basculer le thème" title="Mode sombre">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </button>
+                    <button id="nav-hamburger" class="nav-hamburger" aria-label="Ouvrir le menu" aria-expanded="false"
+                        aria-controls="nav-links">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
-        </nav>
-        <!-- Projets Section-->
-        <section class="py-5">
-            <div class="container px-5 mb-5">
-                <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projets</span></h1>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- ── Page Header ─────────────────────────────────── -->
+        <div class="page-header">
+            <div class="container">
+                <div class="section-label reveal">
+                    <i class="bi bi-grid-3x3-gap-fill"></i>
+                    Mes réalisations
                 </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9 col-xxl-8">
-                        <!-- Project Card: Connector Mapper -->
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
-                                        <h2 class="fw-bolder">Connector Mapper – PeopleSpheres</h2>
-                                        <p>
-                                            Outil permettant aux clients de configurer et personnaliser les flux de
-                                            données entre leurs solutions RH.
-                                            J’ai contribué au développement frontend en React, en intégrant des maquettes
-                                            Figma en composants réutilisables,
-                                            en participant au design system et en développant des interfaces dynamiques
-                                            (mapping de champs, suivi des flux,
-                                            statuts en temps réel) via la consommation d’API REST.
-                                        </p>
-                                        <p><strong>Stack :</strong> React JS, TypeScript, API REST, Figma</p>
-                                    </div>
+                <h1 class="page-title reveal reveal-delay-1">
+                    <span class="text-gradient">Projets</span>
+                </h1>
+                <p class="section-subtitle reveal reveal-delay-2" style="max-width: 560px; margin: 16px auto 0;">
+                    Une sélection de mes projets les plus significatifs, développés en contexte professionnel.
+                </p>
+            </div>
+        </div>
 
-                                </div>
-                                <div class="project-image-wrapper">
-                                    <img src="assets/connector_mapper.png" class="card-img-top project-img"
-                                        alt="Interface Connector Mapper – PeopleSpheres" >
-                                </div>
-                            </div>
+        <!-- ── Projects ────────────────────────────────────── -->
+        <section style="padding: 40px 0 80px;" aria-label="Liste des projets">
+            <div class="container">
+                <div style="max-width: 1000px; margin: 0 auto;">
 
-                        </div>
-
-                        <!-- Project Card: Refonte PeopleSpheres -->
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
-                                        <h2 class="fw-bolder">Refonte de l’application PeopleSpheres</h2>
-                                        <p>
-                                            Refonte complète de l’application web PeopleSpheres visant à moderniser
-                                            l’interface utilisateur,
-                                            améliorer l’ergonomie et la navigation, et optimiser les performances
-                                            front-end.
-                                            L’objectif était d’assurer une meilleure cohérence visuelle et une
-                                            expérience utilisateur plus fluide.
-                                        </p>
-                                        <p><strong>Stack :</strong> React JS, TypeScript, Design System, Performance
-                                            Front-End</p>
+                    <!-- Project 1: Connector Mapper -->
+                    <article class="project-card reveal reveal-delay-1" aria-label="Projet Connector Mapper">
+                        <div class="project-card-content">
+                            <div class="project-info">
+                                <div class="project-number">Projet 01</div>
+                                <h2 class="project-title">Connector Mapper</h2>
+                                <p class="project-desc">
+                                    Outil permettant aux clients de configurer et personnaliser les flux de données
+                                    entre leurs
+                                    solutions RH. J'ai contribué au développement front-end en React en intégrant des
+                                    maquettes
+                                    Figma en composants réutilisables, en participant au design system et en développant
+                                    des
+                                    interfaces dynamiques (mapping de champs, suivi des flux, statuts en temps réel) via
+                                    la
+                                    consommation d'API REST.
+                                </p>
+                                <div>
+                                    <p
+                                        style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 10px;">
+                                        Stack technologique</p>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">React JS</span>
+                                        <span class="tech-tag">TypeScript</span>
+                                        <span class="tech-tag">API REST</span>
+                                        <span class="tech-tag">Figma</span>
+                                        <span class="tech-tag">Design System</span>
                                     </div>
                                 </div>
-                                <div class="project-image-wrapper">
-                                    <img src="assets/page-home.png" class="card-img-top project-img" alt="Refonte application PeopleSpheres">
-                                </div>
+                            </div>
+                            <div class="project-image-panel">
+                                <img src="assets/connector_mapper.png"
+                                    alt="Interface du Connector Mapper – PeopleSpheres : outil de configuration des flux RH"
+                                    loading="lazy" />
+                                <div class="project-image-overlay"></div>
                             </div>
                         </div>
+                    </article>
 
-                    </div>
+                    <!-- Project 2: Refonte PeopleSpheres -->
+                    <article class="project-card reveal reveal-delay-2" aria-label="Projet Refonte PeopleSpheres">
+                        <div class="project-card-content">
+                            <div class="project-info">
+                                <div class="project-number">Projet 02</div>
+                                <h2 class="project-title">Refonte de l'application PeopleSpheres</h2>
+                                <p class="project-desc">
+                                    Refonte complète de l'application web PeopleSpheres visant à moderniser l'interface
+                                    utilisateur, améliorer l'ergonomie et la navigation, et optimiser les performances
+                                    front-end. L'objectif était d'assurer une meilleure cohérence visuelle et une
+                                    expérience
+                                    utilisateur plus fluide pour l'ensemble des utilisateurs de la plateforme.
+                                </p>
+                                <div>
+                                    <p
+                                        style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 10px;">
+                                        Stack technologique</p>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">React JS</span>
+                                        <span class="tech-tag">TypeScript</span>
+                                        <span class="tech-tag">Design System</span>
+                                        <span class="tech-tag">Performance</span>
+                                        <span class="tech-tag">UX/UI</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-image-panel">
+                                <img src="assets/page-home.png"
+                                    alt="Page d'accueil de l'application PeopleSpheres après refonte de l'interface"
+                                    loading="lazy" />
+                                <div class="project-image-overlay"></div>
+                            </div>
+                        </div>
+                    </article>
+
                 </div>
             </div>
         </section>
-        <!-- Call to action section-->
-        <section class="py-5 bg-gradient-primary-to-secondary text-white">
-            <div class="container px-5 my-5">
-                <div class="text-center">
-                    <h2 class="display-4 fw-bolder mb-4">Un projet en tête ? Discutons-en</h2>
-                    <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder"
-                        href="contact.html">Contactez-moi</a>
 
+        <!-- ── CTA Section ─────────────────────────────────── -->
+        <section class="cta-section" aria-label="Appel à l'action">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Un projet en tête ? Discutons-en !</h2>
+                    <p class="cta-sub">Je suis disponible pour de nouvelles opportunités et collaborations.</p>
+                    <a href="contact.html" class="btn-cta">
+                        <i class="bi bi-chat-dots-fill"></i>
+                        Contactez-moi
+                    </a>
                 </div>
             </div>
         </section>
+
     </main>
-    <!-- Footer-->
-    <footer class="bg-white py-4 mt-auto">
-        <div class="container px-5">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto">
-                    <div class="small m-0">
-                        © 2026 — Maatoug Guenaoui. Tous droits réservés.
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <a class="small" href="index.html">Accueil</a>
-                    <span class="mx-1">&middot;</span>
-                    <a class="small" href="resume.html">Parcours</a>
-                    <span class="mx-1">&middot;</span>
-                    <a class="small" href="contact.html">Contact</a>
-                    <span class="mx-1">&middot;</span>
-                </div>
+
+    <!-- ── Footer ──────────────────────────────────────────── -->
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <p class="footer-copy">© <span class="footer-year">2026</span> — Maatoug Guenaoui. Tous droits réservés.
+                </p>
+                <nav class="footer-links" aria-label="Liens du pied de page">
+                    <a href="index.html">Accueil</a>
+                    <a href="resume.html">Parcours</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
+    <!-- Scripts -->
     <script src="js/scripts.js"></script>
 </body>
 
